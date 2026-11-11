@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Blogs | My Portfolio</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        /* Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Back to Home Button */
+        .back-home {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: linear-gradient(to right, #ff4b2b, #ff416c, #a95cff);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .back-home:hover {
+            transform: scale(1.05);
+            color: white;
+        }
+
+        /* Search Bar */
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ff416c;
+            border-radius: 25px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            outline: none;
+        }
+
+        /* Blog List */
+        .blog-list {
+            list-style: none;
+            padding: 0;
+        }
+        .blog-item {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            background: #f1f1f1;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .blog-item:hover {
+            background: #e0e0e0;
+        }
+        .blog-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .blog-date {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- Blog Content -->
+    <div class="container">
+        <h1>Latest Blogs</h1>
+        
+        <!-- Search Bar -->
+        <input type="text" id="searchBox" class="search-box" placeholder="Search for a blog...">
+
+        <!-- Blog List -->
+        <ul id="blogList" class="blog-list"></ul>
+        <a href="index.php" style="width: 100%;" class="back-home">Back to Home</a>
+    </div>
+    <!-- Back to Home Button -->
+    
+
+    <script>
+        let allBlogs = [];
+        let filteredBlogs = [];
+
+        // Fetch Blogs
+        fetch('blogs.json')
+            .then(response => response.json())
+            .then(blogs => {
+                allBlogs = blogs;
+                filteredBlogs = blogs;
+                displayBlogs();
+            })
+            .catch(error => console.error("Error loading blogs:", error));
+
+        function displayBlogs() {
+            const blogList = document.getElementById("blogList");
+            blogList.innerHTML = "";
+
+            filteredBlogs.forEach(blog => {
+                let blogItem = document.createElement("li");
+                blogItem.classList.add("blog-item");
+                blogItem.innerHTML = `
+                    <div class="blog-title">${blog.title}</div>
+                    <div class="blog-date">Published on: ${new Date(blog.date).toLocaleDateString()}</div>
+                `;
+                blogItem.onclick = () => {
+                    window.location.href = `blog.html?slug=${blog.slug}`;
+                };
+                blogList.appendChild(blogItem);
+            });
+        }
+
+        document.getElementById("searchBox").addEventListener("input", function () {
+            const query = this.value.toLowerCase();
+            filteredBlogs = allBlogs.filter(blog => blog.title.toLowerCase().includes(query));
+            displayBlogs();
+        });
+        
+        document.addEventListener("DOMContentLoaded", function () {
+    // Reattach smooth scrolling functionality
+    let links = document.querySelectorAll(".nav-link");
+    links.forEach(link => {
+        link.addEventListener("click", function (e) {
+            if (this.getAttribute("href").startsWith("#")) {
+                e.preventDefault();
+                let targetId = this.getAttribute("href").substring(1);
+                let targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50, // Adjust offset if needed
+                        behavior: "smooth"
+                    });
+                }
+            }
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

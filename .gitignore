@@ -1,0 +1,10 @@
+# Archives and temporary scraped files
+*.zip
+Weasley/
+public-assets.envato-static.com/
+pxdraft.com/
+assets/videos.mp4
+download_assets.ps1
+debug_log.txt
+.DS_Store
+Thumbs.db

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Evah Oboh">
+  <meta name="description" content="Professional Portfolio of Evah Oboh - Full-Stack Web & Mobile App Developer based in Benin City, Nigeria. Specializing in PHP, Cross-Platform Mobile Apps, WordPress, and Payment Integrations.">
+  <meta name="keywords" content="Evah Oboh, SparkWeb Tech Limited, Mobile App Developer Nigeria, Web Developer Nigeria, Benin City Web Designer, PHP Developer, WordPress Developer, Payment Integrator, Responsive Design, Android, iOS">
+
+  <title>Evah Oboh · Full-Stack Web & Mobile App Developer | SparkWeb Tech Limited</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 Grid CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.min.css">
+
+  <!-- Main Pristine Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="main-nav-header">
+    <div class="container">
+      <div class="navbar-container">
+        <!-- Brand Logo -->
+        <a class="brand-wrapper" href="#home">
+          <img src="assets/img/Webmas_favicon_logo._pink_logo-removebg-preview.png" alt="WebMast Logo">
+          <span class="brand-title">Web<span>Mast</span></span>
+        </a>
+
+        <!-- Desktop & Mobile Navigation Links -->
+        <ul class="nav-links-list" id="navMenu">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="d-lg-none mt-2">
+            <a class="btn-custom btn-whatsapp-custom w-100" href="https://wa.me/2347018797590?text=Hello%20Evah,%20I%20am%20interested%20in%20your%20web%20services." target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i> Chat On WhatsApp
+            </a>
+          </li>
+        </ul>
+
+        <!-- Action Button & Mobile Hamburger -->
+        <div class="d-flex align-items-center gap-3">
+          <a class="btn-custom btn-whatsapp-custom d-none d-lg-inline-flex" href="https://wa.me/2347018797590?text=Hello%20Evah,%20I%20am%20interested%20in%20your%20web%20services." target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> Chat On WhatsApp
+          </a>
+          <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="home" class="hero-wrapper">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <!-- Hero Information Column -->
+        <div class="col-lg-7 col-md-12">
+          <h1 class="hero-title">
+            Hi, I'm Evah Oboh — a Creative <br>
+            <span class="typewrite-role" id="type-it">Full-Stack & Mobile Developer</span>
+          </h1>
+
+          <p class="hero-desc">
+            I build fast, responsive, and high-converting web and mobile applications for modern businesses. Specializing in custom PHP backends, cross-platform mobile apps, responsive WordPress sites, and seamless payment gateway integrations.
+          </p>
+
+          <div class="hero-action-buttons">
+            <a class="btn-custom btn-primary-custom" href="https://wa.me/2347018797590?text=Hello%20Evah,%20let's%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a class="btn-custom btn-outline-custom" href="#portfolio">
+              <i class="fas fa-laptop-code"></i> View Projects
+            </a>
+            <a class="btn-custom btn-outline-custom" href="evah.pdf" target="_blank" download>
+              <i class="fas fa-file-pdf text-theme"></i> Resume (PDF)
+            </a>
+          </div>
+
+          <div class="hero-metrics-grid">
+            <div class="hero-metric-item">
+              <h4>15<span>+</span></h4>
+              <p>Projects Delivered</p>
+            </div>
+            <div class="hero-metric-item">
+              <h4>99<span>%</span></h4>
+              <p>Client Satisfaction</p>
+            </div>
+            <div class="hero-metric-item">
+              <h4>Payment<span>✓</span></h4>
+              <p>Gateway Integrator</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Portrait Image Column (Bounded, never overflows) -->
+        <div class="col-lg-5 col-md-12">
+          <div class="hero-image-container">
+            <div class="hero-portrait-card">
+              <img src="assets/img/evah_portrait.jpg" alt="Evah Oboh - Web Developer & Responsive Designer">
+              <div class="hero-floating-location">
+                <i class="fas fa-map-marker-alt text-theme"></i>
+                <span>Benin City, Edo State, Nigeria</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about" class="section-py section-bg-alt">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <!-- About Portrait Image Column -->
+        <div class="col-lg-5 col-md-12">
+          <div class="about-portrait-card">
+            <img src="assets/img/evah_academic.jpg" alt="Evah Oboh - Professional Web Developer">
+            <div class="social-pills-row">
+              <a class="social-pill-item" href="https://wa.me/2347018797590" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+              <a class="social-pill-item" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a class="social-pill-item" href="https://github.com/obohevah" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+              <a class="social-pill-item" href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Narrative Column -->
+        <div class="col-lg-7 col-md-12">
+          <div class="about-details-col">
+            <span class="about-heading-small">ABOUT EVAH OBOH</span>
+            <h2 class="about-title">Dedicated to building high-impact digital experiences.</h2>
+            <p class="about-bio-text">
+              I am a web and mobile app developer with over four years of commercial experience building clean, accessible, and high-performance digital products. Whether creating custom PHP database systems, engineering cross-platform mobile apps, or building responsive client websites with seamless payment gateways, I focus on performance, bulletproof security, and engaging user journeys.
+            </p>
+
+            <div class="info-cards-grid">
+              <div class="info-card-item">
+                <label>Experience</label>
+                <p>4+ Years Commercial</p>
+              </div>
+              <div class="info-card-item">
+                <label>Location</label>
+                <p>Benin City, Edo State</p>
+              </div>
+              <div class="info-card-item">
+                <label>Email</label>
+                <p><a href="mailto:obohevah@gmail.com" class="text-primary-navy">obohevah@gmail.com</a></p>
+              </div>
+              <div class="info-card-item">
+                <label>Phone / WhatsApp</label>
+                <p><a href="tel:07018797590" class="text-primary-navy">0701 879 7590</a></p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn-custom btn-primary-custom" href="evah.pdf" target="_blank" download>
+                <i class="fas fa-download"></i> Download Full Resume (PDF)
+              </a>
+              <a class="btn-custom btn-outline-custom" href="#contact">
+                <i class="fas fa-paper-plane"></i> Get In Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS SECTION ================= -->
+  <section id="skills" class="section-py">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">CORE COMPETENCIES</span>
+        <h2 class="section-title">Technical Expertise & Values</h2>
+        <p class="section-subtitle">A balanced toolkit bridging front-end aesthetics, robust back-end engineering, and reliable payment systems.</p>
+      </div>
+
+      <div class="row gy-5">
+        <!-- Skill Progress Bars Column -->
+        <div class="col-lg-6 col-md-12">
+          <div class="skill-item-bar">
+            <div class="skill-header-meta">
+              <span>Mobile App Development (Android & Cross-Platform)</span>
+              <span class="percent">90%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-bar">
+            <div class="skill-header-meta">
+              <span>PHP & MySQL Database Engineering</span>
+              <span class="percent">88%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-bar">
+            <div class="skill-header-meta">
+              <span>WordPress Theme & Plugin Customization</span>
+              <span class="percent">92%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-bar">
+            <div class="skill-header-meta">
+              <span>HTML5, CSS3 / Bootstrap & Semantic Markup</span>
+              <span class="percent">95%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-bar">
+            <div class="skill-header-meta">
+              <span>Payment Gateway Integration (Paystack, Flutterwave)</span>
+              <span class="percent">90%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-item-bar">
+            <div class="skill-header-meta">
+              <span>Mobile & Responsive Web Design</span>
+              <span class="percent">95%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Value Cards Column -->
+        <div class="col-lg-6 col-md-12">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="skill-value-card">
+                <div class="skill-value-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div class="skill-value-content">
+                  <h5>High Performance</h5>
+                  <p>Lightweight, asset-optimized code that loads lightning fast on mobile devices.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="skill-value-card">
+                <div class="skill-value-icon">
+                  <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="skill-value-content">
+                  <h5>100% Mobile First</h5>
+                  <p>Every interface looks exceptional on iPhones, tablets, laptops, and desktops.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="skill-value-card">
+                <div class="skill-value-icon">
+                  <i class="fas fa-credit-card"></i>
+                </div>
+                <div class="skill-value-content">
+                  <h5>Payment Integrator</h5>
+                  <p>Proven Paystack and Flutterwave checkout flows ensuring transactions process smoothly without hitches.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="skill-value-card">
+                <div class="skill-value-icon">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <div class="skill-value-content">
+                  <h5>Reliable Support</h5>
+                  <p>Ongoing maintenance, post-launch bug fixes, and prompt client communication.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES SECTION ================= -->
+  <section id="services" class="section-py section-bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">WHAT I OFFER</span>
+        <h2 class="section-title">Specialized Web & Mobile Services</h2>
+        <p class="section-subtitle">Tailored digital engineering to elevate your brand presence, scale operations, and increase customer conversions.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-box">
+            <div class="service-icon-wrap">
+              <i class="fas fa-code"></i>
+            </div>
+            <h4>Custom Web Development</h4>
+            <p>Bespoke web applications built with PHP, MySQL, and modern JavaScript tailored precisely to your business workflow.</p>
+            <ul class="service-bullets-list">
+              <li><i class="fas fa-check"></i> Clean, modular procedural & OOP PHP</li>
+              <li><i class="fas fa-check"></i> Relational database schema design</li>
+              <li><i class="fas fa-check"></i> Fast AJAX dynamic interfaces</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 2: Mobile App Development -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-box">
+            <div class="service-icon-wrap">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h4>Mobile App Development</h4>
+            <p>Cross-platform mobile applications engineered for high performance, smooth animations, and intuitive user experiences.</p>
+            <ul class="service-bullets-list">
+              <li><i class="fas fa-check"></i> Cross-platform mobile architecture</li>
+              <li><i class="fas fa-check"></i> REST API & backend synchronization</li>
+              <li><i class="fas fa-check"></i> Push notifications & in-app payments</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-box">
+            <div class="service-icon-wrap">
+              <i class="fab fa-wordpress"></i>
+            </div>
+            <h4>WordPress & CMS Solutions</h4>
+            <p>Custom WordPress installations, bespoke theme coding, WooCommerce stores, and lightweight plugins tailored for speed.</p>
+            <ul class="service-bullets-list">
+              <li><i class="fas fa-check"></i> Custom post types & custom fields</li>
+              <li><i class="fas fa-check"></i> WooCommerce e-commerce setup</li>
+              <li><i class="fas fa-check"></i> Zero bloated templates or slow page builders</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-box">
+            <div class="service-icon-wrap">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <h4>Payment Gateway Integration</h4>
+            <p>Seamless integration of Paystack, Flutterwave, and secure checkout systems for debit cards, USSD, and bank transfers with instant webhook receipt handling.</p>
+            <ul class="service-bullets-list">
+              <li><i class="fas fa-check"></i> Paystack popup & standard redirect</li>
+              <li><i class="fas fa-check"></i> Automated invoice generation</li>
+              <li><i class="fas fa-check"></i> Secure transaction verification</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-box">
+            <div class="service-icon-wrap">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h4>Responsive Web Design</h4>
+            <p>Mobile-first, fluid, and cross-browser responsive interfaces tailored to adapt effortlessly across all screen sizes.</p>
+            <ul class="service-bullets-list">
+              <li><i class="fas fa-check"></i> Fluid grid layouts & breakpoint scaling</li>
+              <li><i class="fas fa-check"></i> Cross-browser mobile usability</li>
+              <li><i class="fas fa-check"></i> High-conversion call-to-actions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card-box">
+            <div class="service-icon-wrap">
+              <i class="fas fa-server"></i>
+            </div>
+            <h4>cPanel & Technical SEO</h4>
+            <p>Complete deployment on cPanel servers, DNS configuration, corporate webmail setup, SSL installation, and SEO best practices.</p>
+            <ul class="service-bullets-list">
+              <li><i class="fas fa-check"></i> SSL certificate installation</li>
+              <li><i class="fas fa-check"></i> Business email setup & SMTP</li>
+              <li><i class="fas fa-check"></i> Google Search Console indexing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO SECTION ================= -->
+  <section id="portfolio" class="section-py">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">AUTHENTIC WORK</span>
+        <h2 class="section-title">Featured Projects & Case Studies</h2>
+        <p class="section-subtitle">Real, deployed web platforms built for organizations, e-commerce, and digital businesses.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs-container">
+        <button class="filter-pill-btn active" data-filter="all">All Projects</button>
+        <button class="filter-pill-btn" data-filter="fullstack">Full-Stack PHP</button>
+        <button class="filter-pill-btn" data-filter="wordpress">WordPress</button>
+        <button class="filter-pill-btn" data-filter="webapp">Web & Mobile Apps</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="row g-4" id="portfolioGrid">
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6 portfolio-item-col" data-category="fullstack">
+          <div class="portfolio-card-item">
+            <div class="portfolio-thumb-frame">
+              <img src="assets/img/01.png" alt="Events Management Platform">
+              <span class="portfolio-thumb-badge">Full-Stack PHP</span>
+            </div>
+            <div class="portfolio-body-content">
+              <h4>Events Management Platform</h4>
+              <p>Dynamic event ticketing, seat reservations, attendee database management, and automated confirmations with Paystack checkout.</p>
+              <div class="portfolio-tech-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Paystack</span>
+                <span>Bootstrap</span>
+              </div>
+              <a class="portfolio-action-link" href="https://webmast.com.ng/events/" target="_blank" rel="noopener noreferrer">
+                <span>Visit Live Website</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6 portfolio-item-col" data-category="wordpress">
+          <div class="portfolio-card-item">
+            <div class="portfolio-thumb-frame">
+              <img src="assets/img/02.png" alt="CE Farmers Branch Church Portal">
+              <span class="portfolio-thumb-badge">WordPress</span>
+            </div>
+            <div class="portfolio-body-content">
+              <h4>CE Farmers Branch Ministry</h4>
+              <p>Community and church portal featuring live sermon audio/video broadcasts, ministry announcements, and digital giving gateway.</p>
+              <div class="portfolio-tech-tags">
+                <span>WordPress</span>
+                <span>Custom Theme</span>
+                <span>Streaming</span>
+                <span>Responsive</span>
+              </div>
+              <a class="portfolio-action-link" href="https://cefarmersbranch.com/" target="_blank" rel="noopener noreferrer">
+                <span>Visit Live Website</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6 portfolio-item-col" data-category="fullstack">
+          <div class="portfolio-card-item">
+            <div class="portfolio-thumb-frame">
+              <img src="assets/img/03.png" alt="Swift Logistics & Delivery Hub">
+              <span class="portfolio-thumb-badge">Full-Stack PHP</span>
+            </div>
+            <div class="portfolio-body-content">
+              <h4>Swift Logistics Platform</h4>
+              <p>Freight cargo management system with instant shipping quote calculator, waybill tracking, and customer dispatch portal.</p>
+              <div class="portfolio-tech-tags">
+                <span>PHP</span>
+                <span>JavaScript</span>
+                <span>REST API</span>
+                <span>MySQL</span>
+              </div>
+              <a class="portfolio-action-link" href="https://webmast.com.ng/logistics/" target="_blank" rel="noopener noreferrer">
+                <span>Visit Live Website</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-lg-4 col-md-6 portfolio-item-col" data-category="webapp">
+          <div class="portfolio-card-item">
+            <div class="portfolio-thumb-frame">
+              <img src="assets/img/04.png" alt="WebMast Music Showcase">
+              <span class="portfolio-thumb-badge">Web Apps</span>
+            </div>
+            <div class="portfolio-body-content">
+              <h4>Music Streaming Showcase</h4>
+              <p>Digital music showcase and artist portfolio with responsive audio player, track previews, album drops, and streaming links.</p>
+              <div class="portfolio-tech-tags">
+                <span>JavaScript</span>
+                <span>Audio API</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+              </div>
+              <a class="portfolio-action-link" href="https://webmast.com.ng/music/" target="_blank" rel="noopener noreferrer">
+                <span>Visit Live Website</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-lg-4 col-md-6 portfolio-item-col" data-category="webapp">
+          <div class="portfolio-card-item">
+            <div class="portfolio-thumb-frame">
+              <img src="assets/img/05.png" alt="Corporate Portfolio Engine">
+              <span class="portfolio-thumb-badge">Web Apps</span>
+            </div>
+            <div class="portfolio-body-content">
+              <h4>Corporate Portfolio Engine</h4>
+              <p>High-conversion agency portfolio showcasing creative case studies, client reviews, and direct WhatsApp lead conversion.</p>
+              <div class="portfolio-tech-tags">
+                <span>Frontend</span>
+                <span>Responsive</span>
+                <span>Bootstrap</span>
+                <span>AJAX</span>
+              </div>
+              <a class="portfolio-action-link" href="https://webmast.com.ng/portfolio/" target="_blank" rel="noopener noreferrer">
+                <span>Visit Live Website</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-lg-4 col-md-6 portfolio-item-col" data-category="fullstack">
+          <div class="portfolio-card-item">
+            <div class="portfolio-thumb-frame">
+              <img src="assets/img/06.png" alt="WebMast Tech Blog & News">
+              <span class="portfolio-thumb-badge">Full-Stack PHP</span>
+            </div>
+            <div class="portfolio-body-content">
+              <h4>WebMast Dynamic Blog</h4>
+              <p>Full-fledged content management platform featuring multi-category articles, reader comments, and newsletter subscription.</p>
+              <div class="portfolio-tech-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>AJAX Comments</span>
+                <span>SEO</span>
+              </div>
+              <a class="portfolio-action-link" href="https://webmast.com.ng/blogphp/" target="_blank" rel="noopener noreferrer">
+                <span>Visit Live Website</span>
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT SECTION ================= -->
+  <section id="contact" class="section-py section-bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">START A CONVERSATION</span>
+        <h2 class="section-title">Let's Build Something Exceptional</h2>
+        <p class="section-subtitle">Have a project in mind or need a reliable web developer? Reach out today for a consultation or quote.</p>
+      </div>
+
+      <div class="row g-5">
+        <!-- Contact Details Column -->
+        <div class="col-lg-5 col-md-12">
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact-info-content">
+              <label>WhatsApp Instant Chat</label>
+              <h6><a href="https://wa.me/2347018797590?text=Hello%20Evah,%20let's%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">+234 701 879 7590</a></h6>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-info-content">
+              <label>Direct Phone Call</label>
+              <h6><a href="tel:08167092286">0816 709 2286</a> / <a href="tel:07018797590">0701 879 7590</a></h6>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info-content">
+              <label>Direct Email</label>
+              <h6><a href="mailto:obohevah@gmail.com">obohevah@gmail.com</a></h6>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon-box">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-info-content">
+              <label>Location & Base</label>
+              <h6>Urora, Benin City, Edo State, Nigeria</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="col-lg-7 col-md-12">
+          <div class="contact-form-card">
+            <form id="contactForm" method="POST">
+              <div class="row g-3">
+                <div class="col-md-6 form-group-custom">
+                  <label class="form-label-custom" for="contactName">Your Name *</label>
+                  <input class="form-control-custom" type="text" id="contactName" name="name" placeholder="e.g. John Doe" required>
+                </div>
+
+                <div class="col-md-6 form-group-custom">
+                  <label class="form-label-custom" for="contactEmail">Email Address *</label>
+                  <input class="form-control-custom" type="email" id="contactEmail" name="email" placeholder="e.g. john@example.com" required>
+                </div>
+
+                <div class="col-12 form-group-custom">
+                  <label class="form-label-custom" for="contactSubject">Subject *</label>
+                  <input class="form-control-custom" type="text" id="contactSubject" name="subject" placeholder="e.g. Website Redesign Project" required>
+                </div>
+
+                <div class="col-12 form-group-custom">
+                  <label class="form-label-custom" for="contactMessage">Project Details / Message *</label>
+                  <textarea class="form-control-custom" id="contactMessage" name="messages" rows="4" placeholder="Briefly describe what you'd like to build..." required></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button class="btn-custom btn-primary-custom w-100" type="submit" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                  </button>
+                  <div class="form-status-alert" id="formStatusAlert"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="map-container-wrap">
+        <iframe title="Benin City Map" src="https://maps.google.com/maps?q=Benin%20City,%20Edo%20State,%20Nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-inner-wrap">
+        <p class="footer-copy-text">
+          &copy; 2026 <strong>SparkWeb Tech Limited</strong>. All rights reserved. Designed &amp; Developed by <strong>Evah Oboh</strong>.
+        </p>
+
+        <ul class="footer-links-row">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <a class="floating-whatsapp-widget" href="https://wa.me/2347018797590?text=Hello%20Evah,%20I%20am%20messaging%20from%20your%20portfolio." target="_blank" rel="noopener noreferrer" title="Chat with Evah on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
