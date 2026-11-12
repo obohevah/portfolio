@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeElement) {
     const roles = [
       'Full-Stack Developer',
-      'Mobile App Developer',
+      'Flutter & Mobile App Developer',
       'Responsive Web Designer',
       'WordPress Specialist',
       'Payment Integrator'
